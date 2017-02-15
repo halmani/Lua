@@ -1,7 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-    printf("Hello World!!\n");
+	const char* str = "Hello World!!\n";  
+    printf("new It\'s %s", str);
     return 0;
 }
