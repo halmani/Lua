@@ -1,0 +1,4 @@
+set(tfs_SRC
+	${CMAKE_CURRENT_LIST_DIR}/main.cpp
+	${CMAKE_CURRENT_LIST_DIR}/String.cpp
+	PARENT_SCOPE)

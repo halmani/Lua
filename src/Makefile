@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Second/Project/Lua/CMakeFiles /Volumes/Second/Project/Lua/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Volumes/Second/Project/Lua && $(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Second/Project/Lua/CMakeFiles /Volumes/Second/Project/Lua/src/CMakeFiles/progress.marks
+	cd /Volumes/Second/Project/Lua && $(MAKE) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/Second/Project/Lua/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Volumes/Second/Project/Lua && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,85 +97,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Volumes/Second/Project/Lua && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Volumes/Second/Project/Lua && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Volumes/Second/Project/Lua && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named LuaSample
-
-# Build rule for target.
-LuaSample: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LuaSample
-.PHONY : LuaSample
-
-# fast build rule for target.
-LuaSample/fast:
-	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/build
-.PHONY : LuaSample/fast
-
-src/String.o: src/String.cpp.o
-
-.PHONY : src/String.o
-
-# target to build an object file
-src/String.cpp.o:
-	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/String.cpp.o
-.PHONY : src/String.cpp.o
-
-src/String.i: src/String.cpp.i
-
-.PHONY : src/String.i
-
-# target to preprocess a source file
-src/String.cpp.i:
-	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/String.cpp.i
-.PHONY : src/String.cpp.i
-
-src/String.s: src/String.cpp.s
-
-.PHONY : src/String.s
-
-# target to generate assembly for a file
-src/String.cpp.s:
-	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/String.cpp.s
-.PHONY : src/String.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -185,13 +118,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... LuaSample"
-	@echo "... src/String.o"
-	@echo "... src/String.i"
-	@echo "... src/String.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -203,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Volumes/Second/Project/Lua && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
