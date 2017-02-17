@@ -1,10 +1,10 @@
 # Luaで組込系スクリプトの実験プロジェクト
 
-# 1. Makefileを作成する
- $ cmake .
+## 1. ビルドする
+ $ sh build.sh
  
-# 2. コンパイルする
- $ make
+## 2. クリーンする
+ $ sh clean.sh
  
-# 3. 実行する
- $ ./LuaSample
+## 3. 実行する
+ $ sh run.sh
