@@ -1,23 +1,28 @@
 #ifndef __STRING_H__
 #define __STRING_H__
 
-/*
 class String
 {
-public:
-	// c-tor
-	String();
-	String(const char const c);
-	String(const char* const str);
+private:
+	int size;
+	char* buffer;
+	char* Create(const char* const str);
 
-	// d-tor
+public:
+	String();
+	String(const char c);
+	String(const char* const str);
 	~String();
 
-private:
-	char* buffer;
-
-	char* Create(const char* const);
 	void Clear();
-}
-*/
+	int Size();
+
+	const char* operator () () const;
+	/*
+	const char* operator = (const char* const);
+	const char* operator + (const char* const);
+	const char* operator + (String);
+	*/
+};
+
 #endif
