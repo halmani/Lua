@@ -123,6 +123,33 @@ LuaSample/fast:
 	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/build
 .PHONY : LuaSample/fast
 
+src/List.o: src/List.cpp.o
+
+.PHONY : src/List.o
+
+# target to build an object file
+src/List.cpp.o:
+	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/List.cpp.o
+.PHONY : src/List.cpp.o
+
+src/List.i: src/List.cpp.i
+
+.PHONY : src/List.i
+
+# target to preprocess a source file
+src/List.cpp.i:
+	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/List.cpp.i
+.PHONY : src/List.cpp.i
+
+src/List.s: src/List.cpp.s
+
+.PHONY : src/List.s
+
+# target to generate assembly for a file
+src/List.cpp.s:
+	$(MAKE) -f CMakeFiles/LuaSample.dir/build.make CMakeFiles/LuaSample.dir/src/List.cpp.s
+.PHONY : src/List.cpp.s
+
 src/String.o: src/String.cpp.o
 
 .PHONY : src/String.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LuaSample"
+	@echo "... src/List.o"
+	@echo "... src/List.i"
+	@echo "... src/List.s"
 	@echo "... src/String.o"
 	@echo "... src/String.i"
 	@echo "... src/String.s"

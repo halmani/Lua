@@ -33,7 +33,7 @@ char* String::Create(const char* const str)
 	for (int i = 0; str[i] != '\0'; ++i)
 		s++;
 	size = s;
-	printf("%s(%d)\n", str, size);
+//	printf("%s(%d)\n", str, size);
 
 	char* ret = NULL;
 	if (0 < size)
@@ -43,7 +43,7 @@ char* String::Create(const char* const str)
 			ret[i] = str[i];
 		ret[size] = '\0';
 	}
-	printf("%s(%d)\n", ret, size);
+//	printf("%s(%d)\n", ret, size);
 	return ret;
 }
 
