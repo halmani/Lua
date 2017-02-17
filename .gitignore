@@ -1,6 +1,7 @@
 ============
 project generated
 ============
+build/
 */CMakeFiles
 CMakeCache.txt
 LuaSample
