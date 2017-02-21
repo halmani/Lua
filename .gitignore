@@ -6,3 +6,4 @@ build/
 CMakeCache.txt
 LuaSample
 cmake_install.cmake
+Makefile
